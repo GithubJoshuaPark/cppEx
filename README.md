@@ -37,7 +37,7 @@ cppEx/
 
 ##  ✨ .vscode/tasks.json
 
-```json
+```
     Purpose
 
     Encapsulates shell commands (compile, run linters, generate docs) as named tasks the editor can run.
@@ -62,6 +62,9 @@ cppEx/
     presentation: controls terminal visibility.
     isBackground: for watch tasks.
 
+```
+
+```json
     {
         "version": "2.0.0",
         "tasks": [
@@ -88,8 +91,9 @@ cppEx/
             }
         ]
     }
+```
 
-
+```
     How to use
     Open a C++ file and press Cmd+Shift+B to run the build task (creates executable next to the source file).
     Reference label from launch.json as preLaunchTask so debugging automatically builds.
@@ -105,7 +109,7 @@ cppEx/
 ##  ✨ .vscode/launch.json
 
 
-```json
+```
     Purpose
 
     Defines how VS Code starts or attaches a debugger to your program.
@@ -130,7 +134,9 @@ cppEx/
     stopOnEntry / stopAtEntry: whether to pause at start.
     env: environment variables.
     externalConsole / runInTerminal: whether to open a separate terminal for I/O.
+```
 
+```json
     {
         "version": "0.2.0",
         "configurations": [
@@ -146,7 +152,9 @@ cppEx/
             }
         ]
     }
+```
 
+```
     Type choice: lldb vs cppdbg
 
     lldb (CodeLLDB extension) — easy to use on macOS, modern UI, fast.
