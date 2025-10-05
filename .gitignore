@@ -1,0 +1,10 @@
+# Build output directory
+# This contains the final executable and all intermediate object files (.o)
+/bin/
+
+# macOS specific files
+# Debug symbols generated during compilation with -g
+*.dSYM/
+
+# Finder metadata
+.DS_Store
