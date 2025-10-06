@@ -12,6 +12,9 @@
 #include "enumsEx.h"  // For the enums example
 #include "typedefsEx.h" // For the typedefs example
 #include "taskManagementEx.h" // For the task management example
+#include "memory_managementEx.h" // For the memory management example
+#include "dynamic_memory_allocationEx.h" // For the dynamic memory allocation example
+#include "file_ioEx.h"
 
 // To build and run this project in VSCode on macOS,
 //    press Cmd+Shift+B to build, 
@@ -53,6 +56,9 @@ MenuItem menu_items[] = {
     {"Enums Example", enumsEx},                    // Example function from enumsEx.cpp
     {"Typedefs Example", typedefsEx},              // Example function from typedefsEx.cpp
     {"Task Management Example", taskManagementEx}, // Example function from taskManagementEx.cpp
+    {"Memory Management Example", memory_managementEx}, // Example function from memory_managementEx.cpp
+    {"Dynamic Memory Allocation Example", dynamic_memory_allocationEx}, // Example function from dynamic_memory_allocationEx.cpp
+    {"File I/O Example", file_ioEx},               // Example function from file_ioEx.cpp
 };
 
 // Calculate the number of items in the menu array.
