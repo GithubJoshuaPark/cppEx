@@ -21,6 +21,8 @@
 #include "double_linked_list_data_structureEx.h"
 #include "circular_linked_list_data_structureEx.h"
 #include "binary_tree_data_structureEx.h"
+#include "searching_algorithmsEx.h"
+#include "sorting_algorithmsEx.h"
 
 // To build and run this project in VSCode on macOS,
 //    press Cmd+Shift+B to build, 
@@ -71,6 +73,8 @@ MenuItem menu_items[] = {
     {"Double Linked List Example", double_linked_list_data_structureEx},  // Example function from double_linked_list_data_structureEx.cpp
     {"Circular Linked List Example", circular_linked_list_data_structureEx}, // Example function from circular_linked_list_data_structureEx.cpp
     {"Binary Tree Example", binary_tree_data_structureEx},                // Example function from binary_tree_data_structureEx.cpp
+    {"Searching Algorithms Example", searching_algorithmsEx},             // Example function from searching_algorithmsEx.cpp
+    {"Sorting Algorithms Example", sorting_algorithmsEx},                 // Example function from sorting_algorithmsEx.cpp
 };
 
 // Calculate the number of items in the menu array.
