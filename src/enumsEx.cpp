@@ -3,18 +3,7 @@
 #include "helloEx.h" // for printLine
 #include "enumsEx.h"
 
-// 1. Define an enumeration (enum).
-// Enums assign names to integer constants, making code more readable.
-// By default, SUNDAY is 0, MONDAY is 1, and so on.
-typedef enum Day {
-    SUNDAY,
-    MONDAY,
-    TUESDAY,
-    WEDNESDAY,
-    THURSDAY,
-    FRIDAY,
-    SATURDAY
-} Day;
+// Day enum is defined in helloEx.h
 
 // Helper function to convert enum to string for printing
 const char* getDayName(Day d) {

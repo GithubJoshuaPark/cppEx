@@ -2,11 +2,7 @@
 #include "helloEx.h" // for printLine
 #include "typedefsEx.h"
 
-// 1. Define a structure the standard way.
-typedef struct Vector2D {
-    float x;
-    float y;
-} Vector2D;
+// 1. Vector2D is already defined in helloEx.h
 
 // 2. Use 'typedef' to create a simpler alias for 'struct Vector2D'.
 //    The new name 'Point' can now be used instead of 'struct Vector2D'.

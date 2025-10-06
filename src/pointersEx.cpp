@@ -14,6 +14,11 @@ void pointersEx(void) {
         {7, 8, 9}
     };
 
+    int* ptr_array = &array[0][0]; // Pointer to the first element of the 2D array
+    int rows, cols;
+    rows = sizeof(array) / sizeof(array[0]);       // Number of rows
+    cols = sizeof(array[0]) / sizeof(array[0][0]); // Number of
+
     // Print the value and its address
     std::cout << "Value: " << value << std::endl;
     std::cout << "Address of value: " << &value << std::endl;
@@ -37,5 +42,19 @@ void pointersEx(void) {
                       << std::endl;
         }
     }
+
+    // Demonstrate pointer arithmetic with the flat pointer to the 2D array
+    std::cout << "Accessing 2D array elements using flat pointer arithmetic:" << std::endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            // Calculate the address of array[i][j] using flat pointer arithmetic
+            int* elementPtr = ptr_array + (i * cols + j);
+            std::cout << "Element at (" << i << "," << j << "): " << *elementPtr 
+                      << " at address: " << elementPtr
+                      << std::endl;
+        }
+    }
+    
+
 
 }

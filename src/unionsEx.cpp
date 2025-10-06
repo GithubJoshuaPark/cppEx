@@ -2,14 +2,7 @@
 #include "helloEx.h" // for printLine
 #include "unionsEx.h"
 
-// 1. Define a union.
-// All members of a union share the same memory location.
-// The size of the union is determined by the size of its largest member.
-typedef union Data {
-    int i;
-    float f;
-    char str[20];
-} Data;
+// 1. Data, a union type is already defined in helloEx.h
 
 void unionsEx(void) {
     printLine("Demonstrating Unions");

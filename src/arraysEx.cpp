@@ -5,8 +5,8 @@
 void arraysEx(void) {
     printLine("Demonstrating Arrays");
 
-    const int size = 5;
-    int numbers[size] = {10, 20, 30, 40, 50};
+    int numbers[] = {10, 20, 30, 40, 50};
+    int size = sizeof(numbers) / sizeof(numbers[0]);
 
     std::cout << "Array elements: ";
     std::cout << "The memory address of the start of the array is: " << numbers << std::endl;

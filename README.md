@@ -13,6 +13,18 @@
 - 한습이 진행되는 동안 각 학습 주제별 소스를 생성한 후 메뉴구조체 배열의 요소로 추가하여
 - 사용자가 선택하여 실행 되도록 합니다.
 
+```
+# JSON 라이브러리 추가
+# ++에는 기본 JSON 라이브러리가 없으므로, 
+# 널리 사용되는 헤더 파일 하나로 구성된 nlohmann/json 라이브러리를 사용
+# 다운로드: 이 링크를 클릭하여 json.hpp 파일을 다운로드하세요.
+# 파일 이동: 다운로드한 json.hpp 파일을 프로젝트의 include 폴더 안으로 옮겨주세요.
+# Single-Header 버전 사용: 모든 코드가 하나의 거대한 json.hpp 파일에 포함되어 있어, 
+# 이 파일 하나만 있으면 다른 파일 없이도 라이브러리를 사용할 수 있습니다.
+
+https://github.com/nlohmann/json/releases
+```
+
 ---
 
 ```
@@ -185,3 +197,12 @@ cppEx/
     Add launch.json referencing that preLaunchTask.
     Open main.cpp, press Cmd+Shift+B to build, or press F5 to build+debug.
 ```
+
+## Getting Started
+1. Clone the repository to your local machine.
+2. Navigate to the directory containing the examples.
+3. Compile all example using `make` command.
+4. Run the compiled executable ( ./main ) to see the output.
+---
+
+![memory_segment](memory_segment.png)

@@ -11,6 +11,7 @@
 #include "unionsEx.h" // For the unions example
 #include "enumsEx.h"  // For the enums example
 #include "typedefsEx.h" // For the typedefs example
+#include "taskManagementEx.h" // For the task management example
 
 // To build and run this project in VSCode on macOS,
 //    press Cmd+Shift+B to build, 
@@ -42,15 +43,16 @@ typedef struct MenuItem{
 // To add a new item, just add a new line here.
 MenuItem menu_items[] = {
     {"Hello World", say_hello},                    // Example function from helloEx.c
-    {"Vector Example", vectorEx},                  // Example function from vectorEx.cpp
     {"Data Types Example", data_typesEx},          // Example function from data_typesEx.cpp
     {"Functions Example", functionsEx},            // Example function from functionsEx.cpp
     {"Pointers Example", pointersEx},              // Example function from pointersEx.cpp
     {"Arrays Example", arraysEx},                  // Example function from arraysEx.cpp
+    {"Vector Example", vectorEx},                  // Example function from vectorEx.cpp
     {"Structures Example", structuresEx},          // Example function from structuresEx.cpp
     {"Unions Example", unionsEx},                  // Example function from unionsEx.cpp
     {"Enums Example", enumsEx},                    // Example function from enumsEx.cpp
     {"Typedefs Example", typedefsEx},              // Example function from typedefsEx.cpp
+    {"Task Management Example", taskManagementEx}, // Example function from taskManagementEx.cpp
 };
 
 // Calculate the number of items in the menu array.

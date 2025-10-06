@@ -2,13 +2,6 @@
 #include "helloEx.h" // Note: This file uses C-style printf
 #include "structuresEx.h"
 
-// 1. Define a structure. This is a blueprint for a new data type.
-// It groups related variables under a single name.
-typedef struct Student {
-    char name[50];
-    int student_id;
-    float gpa;
-} Student;
 
 void structuresEx(void) {
     printLine("Demonstrating Structures");
