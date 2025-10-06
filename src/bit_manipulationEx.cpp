@@ -43,10 +43,15 @@ void bit_manipulationEx(void) {
     // --- 3. Toggling a bit (flipping its value) ---
     // To toggle the 4th bit, we use the XOR operator.
     std::cout << "--- 3. Toggling bit 4 ---\n";
+    
     unsigned char mask_toggle = 1 << 4;
-    printBinary(mask_toggle, "Mask (1 << 4)  ");
+    flags = 0b00001010;
+
+    printBinary(mask_toggle, "Mask (1 << 4)      ");
+    printBinary(flags, "        flags      ");
     flags = flags ^ mask_toggle;
     printBinary(flags, "Result (flags^mask)");
+    
     std::cout << "Toggling it again...\n";
     flags = flags ^ mask_toggle;
     printBinary(flags, "Result (flags^mask)");
