@@ -26,6 +26,8 @@
 #include "bit_manipulationEx.h"
 #include "preprocessor_directivesEx.h"
 #include "error_handlingEx.h"
+#include "hash_table_data_structureEx.h"
+#include "graphs_data_structureEx.h"
 
 // To build and run this project in VSCode on macOS,
 //    press Cmd+Shift+B to build, 
@@ -81,6 +83,8 @@ MenuItem menu_items[] = {
     {"Bit Manipulation Example", bit_manipulationEx},                     // Example function from bit_manipulationEx.cpp
     {"Preprocessor Directives Example", preprocessor_directivesEx},       // Example function from preprocessor_directivesEx.cpp
     {"Error Handling Example", error_handlingEx},                         // Example function from error_handlingEx.cpp
+    {"Hash Table Example", hash_table_data_structureEx},                  // Example function from hash_table_data_structureEx.cpp
+    {"Graphs Example", graphs_data_structureEx},                          // Example function from graphs_data_structureEx.cpp
 };
 
 // Calculate the number of items in the menu array.
