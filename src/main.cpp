@@ -24,6 +24,8 @@
 #include "searching_algorithmsEx.h"
 #include "sorting_algorithmsEx.h"
 #include "bit_manipulationEx.h"
+#include "preprocessor_directivesEx.h"
+#include "error_handlingEx.h"
 
 // To build and run this project in VSCode on macOS,
 //    press Cmd+Shift+B to build, 
@@ -77,6 +79,8 @@ MenuItem menu_items[] = {
     {"Searching Algorithms Example", searching_algorithmsEx},             // Example function from searching_algorithmsEx.cpp
     {"Sorting Algorithms Example", sorting_algorithmsEx},                 // Example function from sorting_algorithmsEx.cpp
     {"Bit Manipulation Example", bit_manipulationEx},                     // Example function from bit_manipulationEx.cpp
+    {"Preprocessor Directives Example", preprocessor_directivesEx},       // Example function from preprocessor_directivesEx.cpp
+    {"Error Handling Example", error_handlingEx},                         // Example function from error_handlingEx.cpp
 };
 
 // Calculate the number of items in the menu array.

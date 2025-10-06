@@ -1,0 +1,6 @@
+#ifndef PREPROCESSOR_DIRECTIVESEX_H
+#define PREPROCESSOR_DIRECTIVESEX_H
+
+void preprocessor_directivesEx(void);
+
+#endif // PREPROCESSOR_DIRECTIVESEX_H
