@@ -23,6 +23,7 @@
 #include "binary_tree_data_structureEx.h"
 #include "searching_algorithmsEx.h"
 #include "sorting_algorithmsEx.h"
+#include "bit_manipulationEx.h"
 
 // To build and run this project in VSCode on macOS,
 //    press Cmd+Shift+B to build, 
@@ -75,6 +76,7 @@ MenuItem menu_items[] = {
     {"Binary Tree Example", binary_tree_data_structureEx},                // Example function from binary_tree_data_structureEx.cpp
     {"Searching Algorithms Example", searching_algorithmsEx},             // Example function from searching_algorithmsEx.cpp
     {"Sorting Algorithms Example", sorting_algorithmsEx},                 // Example function from sorting_algorithmsEx.cpp
+    {"Bit Manipulation Example", bit_manipulationEx},                     // Example function from bit_manipulationEx.cpp
 };
 
 // Calculate the number of items in the menu array.
