@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <iomanip>  // For std::setw, std::setfill
 #include <limits>   // Required for numeric_limits
 #include "helloEx.h" // Note: This file uses C-style printf
 #include "vectorEx.h"
@@ -107,10 +108,14 @@ void clear_screen(void) {
 void show_menu(void) {
     printLine("C++ Language Interactive Examples");
     for (int i = 0; i < num_menu_items; i++) {
-        std::cout << " " << (i + 1) << ". " << menu_items[i].description << std::endl;
+        // Use C++ I/O manipulators for safe, modern formatting.
+        // std::setw(2) sets the width to 2.
+        // std::setfill('0') fills with '0' if the number is less than the width.
+        std::cout << "[" << std::setw(2) << std::setfill('0') << i + 1 << "] " << menu_items[i].description << std::endl;
     }
-    std::cout << " 99. Exit" << std::endl;
     std::cout << "-------------------------------------" << std::endl;
+    std::cout << "[99] Exit" << std::endl;
+    std::cout << "=====================================" << std::endl;
 }
 
 /**
