@@ -16,6 +16,11 @@
 #include "dynamic_memory_allocationEx.h" // For the dynamic memory allocation example
 #include "file_ioEx.h"
 #include "stack_data_structureEx.h"
+#include "queue_data_structureEx.h"
+#include "linked_list_data_structureEx.h"
+#include "double_linked_list_data_structureEx.h"
+#include "circular_linked_list_data_structureEx.h"
+#include "binary_tree_data_structureEx.h"
 
 // To build and run this project in VSCode on macOS,
 //    press Cmd+Shift+B to build, 
@@ -46,21 +51,26 @@ typedef struct MenuItem{
 // This array now drives the entire menu and dispatch logic.
 // To add a new item, just add a new line here.
 MenuItem menu_items[] = {
-    {"Hello World", say_hello},                    // Example function from helloEx.c
-    {"Data Types Example", data_typesEx},          // Example function from data_typesEx.cpp
-    {"Functions Example", functionsEx},            // Example function from functionsEx.cpp
-    {"Pointers Example", pointersEx},              // Example function from pointersEx.cpp
-    {"Arrays Example", arraysEx},                  // Example function from arraysEx.cpp
-    {"Vector Example", vectorEx},                  // Example function from vectorEx.cpp
-    {"Structures Example", structuresEx},          // Example function from structuresEx.cpp
-    {"Unions Example", unionsEx},                  // Example function from unionsEx.cpp
-    {"Enums Example", enumsEx},                    // Example function from enumsEx.cpp
-    {"Typedefs Example", typedefsEx},              // Example function from typedefsEx.cpp
-    {"Task Management Example", taskManagementEx}, // Example function from taskManagementEx.cpp
-    {"Memory Management Example", memory_managementEx}, // Example function from memory_managementEx.cpp
-    {"Dynamic Memory Allocation Example", dynamic_memory_allocationEx}, // Example function from dynamic_memory_allocationEx.cpp
-    {"File I/O Example", file_ioEx},                          // Example function from file_ioEx.cpp
-    {"Stack Data Structure Example", stack_data_structureEx}, // Example function from stack_data_structureEx.cpp
+    {"Hello World", say_hello},                                           // Example function from helloEx.c
+    {"Data Types Example", data_typesEx},                                 // Example function from data_typesEx.cpp
+    {"Functions Example", functionsEx},                                   // Example function from functionsEx.cpp
+    {"Pointers Example", pointersEx},                                     // Example function from pointersEx.cpp
+    {"Arrays Example", arraysEx},                                         // Example function from arraysEx.cpp
+    {"Vector Example", vectorEx},                                         // Example function from vectorEx.cpp
+    {"Structures Example", structuresEx},                                 // Example function from structuresEx.cpp
+    {"Unions Example", unionsEx},                                         // Example function from unionsEx.cpp
+    {"Enums Example", enumsEx},                                           // Example function from enumsEx.cpp
+    {"Typedefs Example", typedefsEx},                                     // Example function from typedefsEx.cpp
+    {"Task Management Example", taskManagementEx},                        // Example function from taskManagementEx.cpp
+    {"Memory Management Example", memory_managementEx},                   // Example function from memory_managementEx.cpp
+    {"Dynamic Memory Allocation Example", dynamic_memory_allocationEx},   // Example function from dynamic_memory_allocationEx.cpp
+    {"File I/O Example", file_ioEx},                                      // Example function from file_ioEx.cpp
+    {"Stack Data Structure Example", stack_data_structureEx},             // Example function from stack_data_structureEx.cpp
+    {"Queue Data Structure Example", queue_data_structureEx},             // Example function from queue_data_structureEx.cpp
+    {"Linked List Data Structure Example", linked_list_data_structureEx}, // Example function from linked_list_data_structureEx.cpp
+    {"Double Linked List Example", double_linked_list_data_structureEx},  // Example function from double_linked_list_data_structureEx.cpp
+    {"Circular Linked List Example", circular_linked_list_data_structureEx}, // Example function from circular_linked_list_data_structureEx.cpp
+    {"Binary Tree Example", binary_tree_data_structureEx},                // Example function from binary_tree_data_structureEx.cpp
 };
 
 // Calculate the number of items in the menu array.
@@ -85,7 +95,7 @@ void show_menu(void) {
     for (int i = 0; i < num_menu_items; i++) {
         std::cout << " " << (i + 1) << ". " << menu_items[i].description << std::endl;
     }
-    std::cout << "99. Exit" << std::endl;
+    std::cout << " 99. Exit" << std::endl;
     std::cout << "-------------------------------------" << std::endl;
 }
 

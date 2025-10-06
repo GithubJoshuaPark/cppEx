@@ -2,11 +2,7 @@
 #include "helloEx.h" // for printLine
 #include "stack_data_structureEx.h"
 
-// A simple stack implementation using a linked list
-struct Node {
-    int data;
-    Node* next;
-};
+// Node: Structure defined in helloEx.h 
 
 void stack_data_structureEx(void) {
     printLine("Demonstrating Stack Data Structure");

@@ -50,4 +50,38 @@ typedef union Data {
     char str[20];
 } Data;
 
+// A structure to represent 
+// -    for a stack implementation, 
+// - or for a linked list, 
+// - or for a circular linked list, 
+typedef struct Node {
+    int data;
+    struct Node* next;
+} Node;
+
+// A structure to represent a doubly linked list node
+typedef struct DNode {
+    int data;
+    struct DNode* next;
+    struct DNode* prev;
+} DNode;
+
+
+// A structure to represent a queue
+#define QUEUE_SIZE 5
+typedef struct Queue{
+    int items[QUEUE_SIZE];
+    int front;
+    int rear;
+    int count;
+} Queue;
+
+// A structure to represent a binary tree node
+typedef struct TreeNode {
+    int data;
+    struct TreeNode* left;
+    struct TreeNode* right;
+} TreeNode;
+
+
 #endif // HELLOEX_H
