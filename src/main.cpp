@@ -31,6 +31,7 @@
 #include "graphs_data_structureEx.h"
 #include "smart_pointerEx.h"
 #include "task_management_using_smart_pointerEx.h"
+#include "multithreadingEx.h"
 
 // To build and run this project in VSCode on macOS,
 //    press Cmd+Shift+B to build, 
@@ -89,6 +90,7 @@ MenuItem menu_items[] = {
     {"Graphs Example", graphs_data_structureEx},                             // Example function from graphs_data_structureEx.cpp
     {"Error Handling Example", error_handlingEx},                            // Example function from error_handlingEx.cpp
     {"Smart Pointers Example", smart_pointerEx},                             // Example function from smart_pointerEx.cpp
+    {"Multithreading Example", multithreadingEx},                            // Example function from multithreadingEx.cpp
     {"Task Management (Smart Pointers)", task_management_using_smart_pointerEx}, // Example function from task_management_using_smart_pointerEx.cpp
 };
 
