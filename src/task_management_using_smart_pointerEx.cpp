@@ -65,6 +65,7 @@ static void loadTasksFromFile(std::vector<std::unique_ptr<Task>>& tasks, int& ne
     std::ifstream file("tasks_smart.json");
     if (file.is_open()) {
         json j;
+        // Handle empty file case
         if (file.peek() == std::ifstream::traits_type::eof()) {
             return;
         }
@@ -99,11 +100,14 @@ static void addTask(std::vector<std::unique_ptr<Task>>& tasks, int& nextId, bool
 
     std::cout << "Enter task title: ";
     std::getline(std::cin, newTask->title);
+
     std::cout << "Enter task description: ";
     std::getline(std::cin, newTask->description);
+
     std::cout << "Enter priority (1-5): ";
     std::cin >> newTask->priority;
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
     std::cout << "Enter due date (e.g., YYYY-MM-DD): ";
     std::getline(std::cin, newTask->dueDate);
 

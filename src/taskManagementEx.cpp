@@ -78,6 +78,8 @@ static void loadTasksFromFile(std::vector<Task>& tasks, int& nextId) {
             return;
         }
         file >> j;
+
+        // Deserialize into a temporary vector of Task objects
         tasks = j.get<std::vector<Task>>();
         file.close();
 
