@@ -221,6 +221,8 @@ MenuItem menu_items[] = {
     {"Structures Example", structuresEx},                                    // Example function from structuresEx.cpp
     {"Unions Example", unionsEx},                                            // Example function from unionsEx.cpp
     {"Enums Example", enumsEx},                                              // Example function from enumsEx.cpp
+    {"C++ Class Example", cpp_classEx},                                      // Example function from cpp_classEx.cpp
+    {"Polymorphism and Interfaces Example", polymorphismEx},                 // Example function from polymorphismEx.cpp
     {"Task Management Example", taskManagementEx},                           // Example function from taskManagementEx.cpp
     {"Memory Management Example", memory_managementEx},                      // Example function from memory_managementEx.cpp
     {"Dynamic Memory Allocation Example", dynamic_memory_allocationEx},      // Example function from dynamic_memory_allocationEx.cpp
@@ -241,6 +243,6 @@ MenuItem menu_items[] = {
     {"Networking Basics Example", networking_basicsEx},                      // Example function from networking_basicsEx.cpp
     {"Multithreading Example", multithreadingEx},                            // Example function from multithreadingEx.cpp
     {"Task Management (Smart Pointers)", task_management_using_smart_pointerEx}, // Example function from task_management_using_smart_pointerEx.cpp
-    {"Snake Game Example", snake_gameEx},                                     // Example function from snake_gameEx.cpp
+    {"*** Snake Game Example", snake_gameEx},                                     // Example function from snake_gameEx.cpp
 };
 ```

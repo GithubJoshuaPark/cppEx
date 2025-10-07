@@ -24,7 +24,6 @@ void printLine(const char* line);
 }
 #endif
 
-
 // 1. Define an enumeration (enum).
 // Enums assign names to integer constants, making code more readable.
 // By default, SUNDAY is 0, MONDAY is 1, and so on.

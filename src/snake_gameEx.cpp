@@ -5,6 +5,9 @@
 #include <cstdlib> // For rand() and srand()
 #include <ctime>   // For time()
 #include <random>  // For modern C++ random number generation
+#include <fstream> // For file I/O
+#include <sstream> // For std::ostringstream
+#include <iomanip> // For std::put_time
 
 // Platform-specific headers for non-blocking input
 #ifndef _WIN32
@@ -58,6 +61,56 @@ static void init_terminal() {
 static void restore_terminal() {
     tcsetattr(STDIN_FILENO, TCSANOW, &old_tio);
 }
+
+/**
+ * @brief Gets the current system time as a formatted string.
+ * @return A string representing the current timestamp (e.g., "YYYY-MM-DD HH:MM:SS").
+ */
+static std::string getCurrentTimestamp() {
+    auto t = std::time(nullptr);
+    auto tm = *std::localtime(&t);
+    std::ostringstream oss;
+    oss << std::put_time(&tm, "%Y-%m-%d %H:%M:%S");
+    return oss.str();
+}
+
+
+/**
+ * @brief Saves the final score to "snake_game_recode.txt".
+ * @param final_score The score to save.
+ */
+static void save_score(int final_score) {
+    // Open the score file in append mode.
+    std::ofstream score_file("snake_game_recode.txt", std::ios_base::app);
+    if (score_file.is_open()) {
+        score_file << "Date: " << getCurrentTimestamp() 
+                   << ", Score: " << final_score << std::endl;
+    }
+}
+
+/**
+ * @brief Loads the high score from "snake_game_recode.txt".
+ * @return The highest score found in the file, or 0 if no records exist.
+ */
+static int load_high_score() {
+    std::ifstream score_file("snake_game_recode.txt");
+    int high_score = 0;
+    std::string line;
+
+    if (score_file.is_open()) {
+        while (std::getline(score_file, line)) {
+            size_t pos = line.find("Score: ");
+            if (pos != std::string::npos) {
+                int score = std::stoi(line.substr(pos + 7));
+                if (score > high_score) {
+                    high_score = score;
+                }
+            }
+        }
+    }
+    return high_score;
+}
+
 
 /**
  * @brief Check if a key has been pressed (non-blocking).
@@ -122,7 +175,7 @@ public:
         score = 0;
     }
 
-    void Draw() {
+    void Draw(int high_score = 0) {
         // 1. Create a 2D buffer for the game board.
         std::vector<std::string> board(BOARD_HEIGHT, std::string(BOARD_WIDTH, ' '));
 
@@ -151,6 +204,7 @@ public:
         for (int i = 0; i < BOARD_WIDTH + 2; i++) std::cout << "#";
         std::cout << std::endl;
 
+        std::cout << "High Score: " << high_score << std::endl;
         std::cout << "Score: " << score << std::endl;
         std::cout << "Use W, A, S, D to move. Press X to quit." << std::endl;
     }
@@ -211,13 +265,18 @@ public:
         }
     }
 
-    void Run() {
+    void Run(int high_score = 0) {
+        if (high_score > 0) {
+            std::cout << "Current High Score: " << high_score << std::endl;
+        } else {
+            std::cout << "No high score yet. Be the first to set one!" << std::endl;
+        }
     #ifndef _WIN32
         init_terminal();
     #endif
 
         while (!gameOver) {
-            Draw();
+            Draw(high_score);
             Input();
             Logic();
             std::this_thread::sleep_for(std::chrono::milliseconds(150));
@@ -229,14 +288,21 @@ public:
 
         std::cout << "\nGame Over!" << std::endl;
         std::cout << "Final Score: " << score << std::endl;
+
+        // Save the score to the record file.
+        save_score(score);
     }
 };
 
 void snake_gameEx(void) {
     printLine("Snake Game Example");
+
+    int high_score = load_high_score();
+    std::cout << "High Score: " << high_score << std::endl;
+
     std::cout << "Starting game..." << std::endl;
     std::this_thread::sleep_for(std::chrono::seconds(1));
 
     SnakeGame game;
-    game.Run();
+    game.Run(high_score);
 }
