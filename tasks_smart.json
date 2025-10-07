@@ -1,0 +1,26 @@
+[
+    {
+        "completed": false,
+        "description": "God takes care of me",
+        "dueDate": "2025-10-07",
+        "id": 1,
+        "priority": 1,
+        "title": "God will make a way for me"
+    },
+    {
+        "completed": true,
+        "description": "One thing I can do is to give thank",
+        "dueDate": "2025-10-07",
+        "id": 2,
+        "priority": 5,
+        "title": "Give thanks"
+    },
+    {
+        "completed": false,
+        "description": "I can rely on God",
+        "dueDate": "2025-10-07",
+        "id": 3,
+        "priority": 3,
+        "title": "Who knows 2morrow"
+    }
+]

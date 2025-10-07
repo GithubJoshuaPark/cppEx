@@ -83,5 +83,15 @@ typedef struct TreeNode {
     struct TreeNode* right;
 } TreeNode;
 
+// A structure to represent a task in the task management system.
+typedef struct Task {
+    int id;
+    bool completed;
+    int priority; // 1 (highest) to 5 (lowest)
+    std::string title;
+    std::string description;
+    std::string dueDate;
+} Task;
+
 
 #endif // HELLOEX_H
