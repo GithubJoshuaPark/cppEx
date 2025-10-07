@@ -204,3 +204,43 @@ cppEx/
 ---
 
 ![memory_segment](memory_segment.png)
+
+```c
+// Contents
+
+MenuItem menu_items[] = {
+    {"Hello World", say_hello},                                              // Example function from helloEx.c
+    {"Data Types Example", data_typesEx},                                    // Example function from data_typesEx.cpp
+    {"Preprocessor Directives Example", preprocessor_directivesEx},          // Example function from preprocessor_directivesEx.cpp
+    {"Bit Manipulation Example", bit_manipulationEx},                        // Example function from bit_manipulationEx.cpp
+    {"Functions Example", functionsEx},                                      // Example function from functionsEx.cpp
+    {"Arrays Example", arraysEx},                                            // Example function from arraysEx.cpp
+    {"Pointers Example", pointersEx},                                        // Example function from pointersEx.cpp
+    {"Vector Example", vectorEx},                                            // Example function from vectorEx.cpp
+    {"Typedefs Example", typedefsEx},                                        // Example function from typedefsEx.cpp
+    {"Structures Example", structuresEx},                                    // Example function from structuresEx.cpp
+    {"Unions Example", unionsEx},                                            // Example function from unionsEx.cpp
+    {"Enums Example", enumsEx},                                              // Example function from enumsEx.cpp
+    {"Task Management Example", taskManagementEx},                           // Example function from taskManagementEx.cpp
+    {"Memory Management Example", memory_managementEx},                      // Example function from memory_managementEx.cpp
+    {"Dynamic Memory Allocation Example", dynamic_memory_allocationEx},      // Example function from dynamic_memory_allocationEx.cpp
+    {"File I/O Example", file_ioEx},                                         // Example function from file_ioEx.cpp
+    {"Searching Algorithms Example", searching_algorithmsEx},                // Example function from searching_algorithmsEx.cpp
+    {"Sorting Algorithms Example", sorting_algorithmsEx},                    // Example function from sorting_algorithmsEx.cpp
+    {"Stack Data Structure Example", stack_data_structureEx},                // Example function from stack_data_structureEx.cpp
+    {"Queue Data Structure Example", queue_data_structureEx},                // Example function from queue_data_structureEx.cpp
+    {"Linked List Data Structure Example", linked_list_data_structureEx},    // Example function from linked_list_data_structureEx.cpp
+    {"Double Linked List Example", double_linked_list_data_structureEx},     // Example function from double_linked_list_data_structureEx.cpp
+    {"Circular Linked List Example", circular_linked_list_data_structureEx}, // Example function from circular_linked_list_data_structureEx.cpp
+    {"Binary Tree Example", binary_tree_data_structureEx},                   // Example function from binary_tree_data_structureEx.cpp
+    {"Hash Table Example", hash_table_data_structureEx},                     // Example function from hash_table_data_structureEx.cpp
+    {"Graphs Example", graphs_data_structureEx},                             // Example function from graphs_data_structureEx.cpp
+    {"Error Handling Example", error_handlingEx},                            // Example function from error_handlingEx.cpp
+    {"Smart Pointers Example", smart_pointerEx},                             // Example function from smart_pointerEx.cpp
+    {"Socket Programming Example", socket_programmingEx},                    // Example function from socket_programmingEx.cpp
+    {"Networking Basics Example", networking_basicsEx},                      // Example function from networking_basicsEx.cpp
+    {"Multithreading Example", multithreadingEx},                            // Example function from multithreadingEx.cpp
+    {"Task Management (Smart Pointers)", task_management_using_smart_pointerEx}, // Example function from task_management_using_smart_pointerEx.cpp
+    {"Snake Game Example", snake_gameEx},                                     // Example function from snake_gameEx.cpp
+};
+```
