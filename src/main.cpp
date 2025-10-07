@@ -34,6 +34,7 @@
 #include "networking_basicsEx.h"
 #include "snake_gameEx.h"
 #include "cpp_classEx.h"
+#include "tetris_gameEx.h"
 #include "polymorphismEx.h"
 #include "socket_programmingEx.h"
 #include "multithreadingEx.h"
@@ -102,6 +103,7 @@ MenuItem menu_items[] = {
     {"Multithreading Example", multithreadingEx},                            // Example function from multithreadingEx.cpp
     {"Task Management (Smart Pointers)", task_management_using_smart_pointerEx}, // Example function from task_management_using_smart_pointerEx.cpp
     {"*** Snake Game Example", snake_gameEx},                                     // Example function from snake_gameEx.cpp
+    {"*** Tetris Game Example", tetris_gameEx}                                      // Example function from tetris_gameEx.cpp
 };
 
 // Calculate the number of items in the menu array.
