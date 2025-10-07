@@ -33,6 +33,7 @@
 #include "task_management_using_smart_pointerEx.h"
 #include "networking_basicsEx.h"
 #include "snake_gameEx.h"
+#include "cpp_classEx.h"
 #include "socket_programmingEx.h"
 #include "multithreadingEx.h"
 
@@ -77,6 +78,7 @@ MenuItem menu_items[] = {
     {"Structures Example", structuresEx},                                    // Example function from structuresEx.cpp
     {"Unions Example", unionsEx},                                            // Example function from unionsEx.cpp
     {"Enums Example", enumsEx},                                              // Example function from enumsEx.cpp
+    {"C++ Class Example", cpp_classEx},                                      // Example function from cpp_classEx.cpp
     {"Task Management Example", taskManagementEx},                           // Example function from taskManagementEx.cpp
     {"Memory Management Example", memory_managementEx},                      // Example function from memory_managementEx.cpp
     {"Dynamic Memory Allocation Example", dynamic_memory_allocationEx},      // Example function from dynamic_memory_allocationEx.cpp

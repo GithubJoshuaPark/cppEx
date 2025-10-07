@@ -19,19 +19,51 @@
 // --- Terminal Control Functions (for non-blocking input on macOS/Linux) ---
 
 #ifndef _WIN32
+
+/**
+ * @brief Terminal settings for non-blocking input.
+ */
 static struct termios old_tio, new_tio;
 
+/**
+ * @brief Initialize the terminal to read input without blocking and without echoing.
+ * 게임 시작 전, 터미널을 "실시간 입력 모드"로 변경합니다. (Enter 없이, 화면에 표시 없이 키 입력 받기)
+ * kbhit() 함수가 non-blocking 방식으로 키 입력을 감지할 수 있고, 
+ * 사용자는 쾌적한 환경에서 스네이크 게임을 즐길 수 있게 됩
+ */
 static void init_terminal() {
+    // 1. 현재 터미널의 설정을 'old_tio' 구조체에 저장합니다.
     tcgetattr(STDIN_FILENO, &old_tio);
+
+    // 2. 새 설정을 위해 현재 설정을 복사합니다.
     new_tio = old_tio;
+
+    // 3. 새 설정에서 두 가지 중요한 플래그를 끕니다.
+    //    c_lflag는 터미널의 로컬 모드를 제어합니다.
+    //    ~ (비트 NOT)과 & (비트 AND) 연산을 사용하여 특정 비트를 0으로 만듭니다.
     new_tio.c_lflag &= (~ICANON & ~ECHO);
+    //    - ~ICANON: 정규 모드를 비활성화합니다. (Enter 없이 키 입력 즉시 받기)
+    //    - ~ECHO:   입력된 문자를 화면에 표시하지 않습니다. (w, a, s, d가 화면에 안보이게 함)
+
+    // 4. 변경된 새 설정(비정규모드)을 터미널에 즉시 적용합니다.
+    // 비정규모드(row-mode)에서는 사용자가 키를 누르면 즉시 프로그램에 전달됩니다.
+    // 또한, 입력된 문자가 화면에 표시되지 않습니다.
     tcsetattr(STDIN_FILENO, TCSANOW, &new_tio);
 }
 
+/**
+ * @brief Restore the terminal settings to their original state.
+ * 게임 종료 후, 터미널을 원래의 "일반 모드"로 되돌립니다.
+ */
 static void restore_terminal() {
     tcsetattr(STDIN_FILENO, TCSANOW, &old_tio);
 }
 
+/**
+ * @brief Check if a key has been pressed (non-blocking).
+ * 키보드 버퍼에 사용자가 누른 키가 있는지 기다리지 않고 즉시 확인합니다
+ * 눌린 키가 있으면 0이 아닌 값(보통 1)을 반환합니다.
+ */
 static int kbhit() {
     struct timeval tv;
     fd_set rdfs;
@@ -39,7 +71,10 @@ static int kbhit() {
     tv.tv_usec = 0;
     FD_ZERO(&rdfs);
     FD_SET(STDIN_FILENO, &rdfs);
+    // select 함수는 지정된 시간(tv) 동안 파일 디스크립터(rdfs)의 상태 변화를 감시합니다.
+    // 대기 시간을 0으로 설정했으므로, 기다리지 않고 즉시 상태를 확인하고 반환합니다.
     select(STDIN_FILENO + 1, &rdfs, NULL, NULL, &tv);
+    // FD_ISSET은 select 호출 후, STDIN_FILENO에 읽을 데이터(키 입력)가 있는지 확인합니다.
     return FD_ISSET(STDIN_FILENO, &rdfs);
 }
 #endif
@@ -63,8 +98,8 @@ private:
 
     // Modern C++ random number generation
     std::mt19937 rng;
-    std::uniform_int_distribution<int> distX;
-    std::uniform_int_distribution<int> distY;
+    std::uniform_int_distribution<int> distX;  // Range for x-coordinate
+    std::uniform_int_distribution<int> distY;  // Range for y-coordinate
 
     void PlaceFruit() {
         fruit.x = distX(rng);
