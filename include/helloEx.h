@@ -93,5 +93,12 @@ typedef struct Task {
     std::string dueDate;
 } Task;
 
+// A structure to represent a log entry.
+typedef struct FILE_LOG {
+    std::string timestamp;
+    std::string level;
+    std::string message;
+} FILE_LOG;
+
 
 #endif // HELLOEX_H

@@ -1,0 +1,8 @@
+[2025-10-07 17:22:52] [INFO] Server starting up.
+[2025-10-07 17:22:55] [INFO] Client starting up.
+[2025-10-07 17:22:55] [INFO] Sent message: Hello from client!
+[2025-10-07 17:22:55] [INFO] Client connected.
+[2025-10-07 17:22:55] [INFO] Received message: Hello from client!
+[2025-10-07 17:22:55] [INFO] Server shutting down.
+[2025-10-07 17:22:55] [INFO] Received echo: Hello from client!
+[2025-10-07 17:22:55] [INFO] Client shutting down.

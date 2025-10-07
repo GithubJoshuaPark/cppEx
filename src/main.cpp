@@ -32,6 +32,7 @@
 #include "smart_pointerEx.h"
 #include "task_management_using_smart_pointerEx.h"
 #include "networking_basicsEx.h"
+#include "socket_programmingEx.h"
 #include "multithreadingEx.h"
 
 // To build and run this project in VSCode on macOS,
@@ -91,6 +92,7 @@ MenuItem menu_items[] = {
     {"Graphs Example", graphs_data_structureEx},                             // Example function from graphs_data_structureEx.cpp
     {"Error Handling Example", error_handlingEx},                            // Example function from error_handlingEx.cpp
     {"Smart Pointers Example", smart_pointerEx},                             // Example function from smart_pointerEx.cpp
+    {"Socket Programming Example", socket_programmingEx},                    // Example function from socket_programmingEx.cpp
     {"Networking Basics Example", networking_basicsEx},                      // Example function from networking_basicsEx.cpp
     {"Multithreading Example", multithreadingEx},                            // Example function from multithreadingEx.cpp
     {"Task Management (Smart Pointers)", task_management_using_smart_pointerEx}, // Example function from task_management_using_smart_pointerEx.cpp
