@@ -155,16 +155,21 @@ public:
         }
 
         if (snake[0].x >= BOARD_WIDTH || snake[0].x < 0 || snake[0].y >= BOARD_HEIGHT || snake[0].y < 0) {
+            // The '&' at the end runs the command in the background so it doesn't block the game.
+            system("afplay gameover.wav &");
             gameOver = true;
         }
 
         for (size_t i = 1; i < snake.size(); i++) {
             if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
+                system("afplay gameover.wav &");
                 gameOver = true;
             }
         }
 
         if (snake[0].x == fruit.x && snake[0].y == fruit.y) {
+            // The '&' at the end runs the command in the background so it doesn't block the game.
+            system("afplay eat.wav &");
             score += 10;
             PlaceFruit();
             snake.push_back(prev);
