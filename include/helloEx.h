@@ -1,7 +1,14 @@
 #ifndef HELLOEX_H
 #define HELLOEX_H
 
+// Include C++ headers only when compiled by a C++ compiler
+#ifdef __cplusplus
+#include <string>
+#endif
+
 #include <stdio.h>
+#include <stdbool.h>
+
  
 // When a C++ compiler includes this header, it needs to know that these
 // functions have C linkage (no name mangling). The __cplusplus macro
@@ -83,6 +90,10 @@ typedef struct TreeNode {
     struct TreeNode* right;
 } TreeNode;
 
+// The following structs use std::string, which is a C++ type.
+// They should only be visible to the C++ compiler.
+#ifdef __cplusplus
+
 // A structure to represent a task in the task management system.
 typedef struct Task {
     int id;
@@ -99,6 +110,6 @@ typedef struct FILE_LOG {
     std::string level;
     std::string message;
 } FILE_LOG;
-
+#endif // __cplusplus
 
 #endif // HELLOEX_H
