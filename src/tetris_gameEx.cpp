@@ -221,7 +221,7 @@ public:
                             }
                         }
                     }
-                    
+
                     system("afplay gameover.wav &");
                     score += 25;
                     if (!lines.empty()) score += (1 << lines.size()) * 100;
