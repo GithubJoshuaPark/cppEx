@@ -96,7 +96,13 @@ $(BIN_DIR)/%.o: $(SRC_DIR)/%.c | $(BIN_DIR)
 
 # 'make clean'을 실행하면 생성된 파일들을 삭제합니다.
 clean:
+	@echo "Cleaning up..."
 	rm -rf $(BIN_DIR)
+
+# 'make copy_main'을 실행하면 bin 디렉토리에 main 파일을 복사합니다.
+copy_main:
+	@echo "Copying main executable to current directory..."
+	cp $(TARGET) .	
 
 # 가상 타겟(Phony Target) 선언
 # all, clean은 실제 파일 이름이 아니므로 .PHONY로 선언합니다.
