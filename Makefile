@@ -102,6 +102,11 @@ copy_main:
 	@echo "Copying main executable to current directory..."
 	cp $(TARGET) .
 
+# 'make copy_main'을 실행하면 bin 디렉토리에 main 파일을 복사합니다.
+copy_main:
+	@echo "Copying main executable to current directory..."
+	cp $(TARGET) .
+
 # 가상 타겟(Phony Target) 선언
 # all, clean은 실제 파일 이름이 아니므로 .PHONY로 선언합니다.
 
