@@ -1,6 +1,6 @@
 # c++ exercising
 
-> 저는 현장에서 java, c#, javascript, python 등 다양한 언어를 사용하고 있지만, 
+> 저는 현장에서 java, c#, javascript, python 등 다양한 언어를 사용하고 있지만,
 > 가장 기본이 되는 언어는 C/C++ 언어라고 생각합니다.
 > C언어에서 구현했던 소스들을 C++ 소스코딩을 하여 정리 했습니다.
 > 이 저장소는 C++언어의 다양한 예제를 통해 학습하고자 하는 분들에게 도움이 되고자 합니다.
@@ -13,11 +13,11 @@
 
 ```
 # JSON 라이브러리 추가
-# ++에는 기본 JSON 라이브러리가 없으므로, 
+# ++에는 기본 JSON 라이브러리가 없으므로,
 # 널리 사용되는 헤더 파일 하나로 구성된 nlohmann/json 라이브러리를 사용
 # 다운로드: 이 링크를 클릭하여 json.hpp 파일을 다운로드하세요.
 # 파일 이동: 다운로드한 json.hpp 파일을 프로젝트의 include 폴더 안으로 옮겨주세요.
-# Single-Header 버전 사용: 모든 코드가 하나의 거대한 json.hpp 파일에 포함되어 있어, 
+# Single-Header 버전 사용: 모든 코드가 하나의 거대한 json.hpp 파일에 포함되어 있어,
 # 이 파일 하나만 있으면 다른 파일 없이도 라이브러리를 사용할 수 있습니다.
 
 https://github.com/nlohmann/json/releases
@@ -247,3 +247,51 @@ MenuItem menu_items[] = {
     {"*** Tetris Game Example", tetris_gameEx}                                      // Example function from tetris_gameEx.cpp
 };
 ```
+
+---
+
+## 📝 상세 설명
+
+### 1. 프로젝트 목적
+*   C/C++의 기본 문법부터 심화 내용까지 다양한 예제를 코드로 직접 확인하고 실행해 볼 수 있습니다.
+*   `main.cpp`가 **메뉴 역할**을 하여, 프로그램을 실행하면 원하는 예제를 선택해서 동작을 확인할 수 있는 구조로 되어 있습니다.
+
+### 2. 주요 포함 내용 (`src` 폴더)
+다양한 주제의 예제 코드가 포함되어 있습니다.
+*   **기본 문법**: 포인터, 구조체, 공용체, 함수, 비트 연산 등
+*   **자료구조**: 연결 리스트(Linked List), 스택(Stack), 큐(Queue), 이진 트리(Binary Tree), 해시 테이블(Hash Table) 등
+*   **알고리즘**: 정렬(Sorting), 탐색(Searching)
+*   **시스템 프로그래밍**: 멀티스레딩, 소켓 프로그래밍, 파일 I/O
+*   **미니 게임**: 스네이크 게임(`snake_gameEx`), 테트리스(`tetris_gameEx`)
+
+### 3. 프로젝트 구조 설명
+*   **`src/`**: 소스 코드 파일들이 위치합니다. (`main.cpp` 및 각 예제 파일들)
+*   **`include/`**: 헤더 파일들이 위치합니다.
+*   **`bin/`**: 컴파일된 실행 파일과 오브젝트 파일(`*.o`)이 저장되는 폴더입니다.
+*   **`Makefile`**: `make` 명령어를 통해 프로젝트를 쉽게 빌드할 수 있도록 설정된 파일입니다.
+*   **`.vscode/`**: VS Code 사용자를 위한 빌드(`tasks.json`) 및 디버깅(`launch.json`) 설정이 포함되어 있습니다.
+
+### 4. 실행 방법 (Make)
+터미널에서 다음 명령어를 사용하여 빌드하고 실행할 수 있습니다.
+
+1.  **빌드**: `make`
+2.  **빌드 후 main 파일 복사**: `make copy_main`
+3.  **실행**: `main`
+
+### 5. 개발 환경 설정 (VS Code IntelliSense)
+
+이 프로젝트는 VS Code에서 원활한 코드 분석 및 자동 완성을 위해 `compile_commands.json`을 사용합니다.
+
+#### `compile_commands.json`
+*   **용도**: 컴파일 데이터베이스 파일로, 각 소스 파일의 컴파일 명령어 정보를 담고 있습니다.
+*   **효과**: VS Code(IntelliSense)가 이 파일을 참조하여 헤더 파일 경로를 인식하고, 정확한 코드 자동 완성 및 에러 표시 기능을 제공합니다.
+
+#### `generate_compile_commands.py`
+*   **용도**: `compile_commands.json` 파일을 자동으로 생성하는 파이썬 스크립트입니다.
+*   **사용법**: 새로운 소스 파일을 추가하거나 빌드 설정이 바뀌었을 때 아래 명령어를 실행하세요.
+    ```bash
+    python3 generate_compile_commands.py
+    ```
+
+
+

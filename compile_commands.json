@@ -1,0 +1,182 @@
+[
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/smart_pointerEx.o src/smart_pointerEx.cpp",
+        "file": "src/smart_pointerEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/polymorphismEx.o src/polymorphismEx.cpp",
+        "file": "src/polymorphismEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/sorting_algorithmsEx.o src/sorting_algorithmsEx.cpp",
+        "file": "src/sorting_algorithmsEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/stack_data_structureEx.o src/stack_data_structureEx.cpp",
+        "file": "src/stack_data_structureEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/tetris_gameEx.o src/tetris_gameEx.cpp",
+        "file": "src/tetris_gameEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/cpp_classEx.o src/cpp_classEx.cpp",
+        "file": "src/cpp_classEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/error_handlingEx.o src/error_handlingEx.cpp",
+        "file": "src/error_handlingEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/linked_list_data_structureEx.o src/linked_list_data_structureEx.cpp",
+        "file": "src/linked_list_data_structureEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/socket_programmingEx.o src/socket_programmingEx.cpp",
+        "file": "src/socket_programmingEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/graphs_data_structureEx.o src/graphs_data_structureEx.cpp",
+        "file": "src/graphs_data_structureEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/multithreadingEx.o src/multithreadingEx.cpp",
+        "file": "src/multithreadingEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/taskManagementEx.o src/taskManagementEx.cpp",
+        "file": "src/taskManagementEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/preprocessor_directivesEx.o src/preprocessor_directivesEx.cpp",
+        "file": "src/preprocessor_directivesEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/double_linked_list_data_structureEx.o src/double_linked_list_data_structureEx.cpp",
+        "file": "src/double_linked_list_data_structureEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/file_ioEx.o src/file_ioEx.cpp",
+        "file": "src/file_ioEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/vectorEx.o src/vectorEx.cpp",
+        "file": "src/vectorEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/bit_manipulationEx.o src/bit_manipulationEx.cpp",
+        "file": "src/bit_manipulationEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/circular_linked_list_data_structureEx.o src/circular_linked_list_data_structureEx.cpp",
+        "file": "src/circular_linked_list_data_structureEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/memory_managementEx.o src/memory_managementEx.cpp",
+        "file": "src/memory_managementEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/dynamic_memory_allocationEx.o src/dynamic_memory_allocationEx.cpp",
+        "file": "src/dynamic_memory_allocationEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/data_typesEx.o src/data_typesEx.cpp",
+        "file": "src/data_typesEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/binary_tree_data_structureEx.o src/binary_tree_data_structureEx.cpp",
+        "file": "src/binary_tree_data_structureEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/typedefsEx.o src/typedefsEx.cpp",
+        "file": "src/typedefsEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/functionsEx.o src/functionsEx.cpp",
+        "file": "src/functionsEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/enumsEx.o src/enumsEx.cpp",
+        "file": "src/enumsEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/snake_gameEx.o src/snake_gameEx.cpp",
+        "file": "src/snake_gameEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/structuresEx.o src/structuresEx.cpp",
+        "file": "src/structuresEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/task_management_using_smart_pointerEx.o src/task_management_using_smart_pointerEx.cpp",
+        "file": "src/task_management_using_smart_pointerEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/hash_table_data_structureEx.o src/hash_table_data_structureEx.cpp",
+        "file": "src/hash_table_data_structureEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/networking_basicsEx.o src/networking_basicsEx.cpp",
+        "file": "src/networking_basicsEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/unionsEx.o src/unionsEx.cpp",
+        "file": "src/unionsEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/searching_algorithmsEx.o src/searching_algorithmsEx.cpp",
+        "file": "src/searching_algorithmsEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/main.o src/main.cpp",
+        "file": "src/main.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/pointersEx.o src/pointersEx.cpp",
+        "file": "src/pointersEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/arraysEx.o src/arraysEx.cpp",
+        "file": "src/arraysEx.cpp"
+    },
+    {
+        "directory": "/Users/soromiso/Desktop/macDeskTop/GitHubForSoro/C-ex/cppEx",
+        "command": "clang -Wall -g -pthread -Iinclude -c -o bin/queue_data_structureEx.o src/queue_data_structureEx.cpp",
+        "file": "src/queue_data_structureEx.cpp"
+    }
+]
