@@ -58,6 +58,10 @@ cppEx/
 1.  **프로젝트 빌드**
 
     ```bash
+    # Cleaning up build files
+    make clean
+
+    # Makefile 실행
     make
     ```
 
@@ -65,6 +69,7 @@ cppEx/
     `bin` 폴더에 있는 실행 파일을 현재 디렉토리로 복사합니다.
 
     ```bash
+    # main 실행 파일 복사
     make copy_main
     ```
 
